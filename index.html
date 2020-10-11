@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./extensions/css/main.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -26,7 +27,7 @@
                 <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./extensions/teaching.html">Teaching</a>
+                <a class="nav-link" href="./extensions/html/teaching.html">Teaching</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,5 +51,62 @@
         </div>
     </nav>
     <h1>Testing Site Home Page</h1>
+
+    <!-- What the user sees when they first open the homepage -->
+    <section id='introduction'>
+
+    </section>
+
+    <!-- Section for About me -->
+    <section id='about-me'>
+
+    </section>
+
+    <!-- Section for Dota Pocket Client and Smart Cookbook -->
+    <section class="featured-projects">
+        <h1>Featured Projects</h1>
+    </section>
+
+    <!-- Make it like a gallery, where on hover text shows up over the image with a brief synopsis -->
+    <!-- Make entire website one page, with sections that can be clicked to -->
+    <section class="projects container">
+        <div class="row">
+            <div class="col-md-4 projects-item">
+                <h3>Competitive Pokemon Trend Analyzer</h3>
+                <p>Web scraping tool used to write competitive Pokemon data to CSV files for later trend analysis using matplotlib</p>
+                <p>Python</p>
+            </div>
+            <div class="col-md-4 projects-item">
+                <h3>Valve Steam Web Api Wrapper</h3>
+                <p>Npm package designed as a wrapper to rechieve data from the popular Valve games Dota2, CSGO, and TF2</p>
+                <p>Node.js Steam Web Api</p>
+            </div>
+            <div class="col-md-4 projects-item">
+                <h3>Haar Cascade Training Data Generation Automator</h3>
+                <p>Automates the generation of training data for custom haar cascades</p>
+                <p>Python Opencv Shell</p>
+            </div>
+            <div class="col-md-4 projects-item">
+                <h3>A Cautionary Tale - A Global Warming Text-Based Decision Game</h3>
+                <p>Multi-path text game designed as an educational tool on global warming to teach how our individual actions can affect the future of the planet</p>
+                <p>Java</p>
+            </div>
+            <div class="col-md-4 projects-item">
+                <h3>1970 San Diego county housing data analysis</h3>
+                <p>Used regression techniques to find intersting correlations for a data science hackathon</p>
+                <p>Python Pandas Tensorflow Keras</p>
+            </div>
+            <div class="col-md-4 projects-item">
+                <h3>Image Processing and Computer Vision Training/Practice Sets</h3>
+                <p>Notes on step-by-step implementations of many image processing/computer vision algorithms used in opencv.</p>
+                <p>Python Jupyter Notebooks Opencv Numpy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        
+    </section>
 </body>
 </html>
