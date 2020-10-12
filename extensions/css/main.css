@@ -5,3 +5,29 @@
     margin: auto;
     margin-bottom: 20px;
 }
+
+.contact {
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 50px;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+}
+
+/* .modal-dialog {
+    width: 80%;
+} */
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        /* max-width: 500px; */
+        max-width: none;
+        width: 80%;
+        margin: 1.75rem auto;
+    }
+}

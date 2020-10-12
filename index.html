@@ -12,6 +12,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script src="https://kit.fontawesome.com/ed43ac3da1.js" crossorigin="anonymous"></script>
+
     <title>Home</title>
 </head>
 <body>
@@ -24,12 +26,18 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#about-me">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#projects">Projects <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#contact">Contact <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./extensions/html/teaching.html">Teaching</a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Dropdown
                 </a>
@@ -42,34 +50,95 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
+            </li> -->
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
-    <h1>Testing Site Home Page</h1>
 
     <!-- What the user sees when they first open the homepage -->
     <section id='introduction'>
-
+        <p>Hi my name is
+            Ethan Wadsworth
+            I am a passionate software developer who builds for more than just the web.
+        </p>
+        <p>
+            I'm a software developer currently located in La Jolla, CA specializing in writing fullstack web 
+            applications with side interests in machine learning and data manipulation.
+        </p>
+        <button type="button" class="btn btn-outline-primary">Contact</button>
     </section>
 
     <!-- Section for About me -->
-    <section id='about-me'>
+    <section id='about-me' class="container">
+        <p>
+            Hello and welcome! My name is Ethan Wadsworth, a software developer currently located in La Jolla, CA.
+            
+            I'm currently a second-year computer science major at the University of California, San Diego (UCSD). Outside 
+            of the classroom, I design auto-aiming and aim assist (aimbot) as a member of the computer vision subteam on 
+            Triton Robotics. 
 
+            In my free time, I enjoy playing video games, swimming, and learning Japanese. I'm always up for a casual
+            game of Smash (Corrin Main) or Mariokart!
+
+            Some of the technologies I work with frequently include: Node.js, React, Javascript, HTML & CSS, Python, C++, Opencv
+        </p>
     </section>
 
     <!-- Section for Dota Pocket Client and Smart Cookbook -->
-    <section class="featured-projects">
+    <!-- Probably just add this to the projects section -->
+    <!-- <section class="featured-projects">
         <h1>Featured Projects</h1>
-    </section>
+        <div>
+            <p>
+                A web application that returns recipes based on what ingredients the user inputs. Designed with the purpose
+                of reducing food waste, stretching meal budgets, and reducing trips to the grocery store to help keep people 
+                safe during the pandemic.
+                Google Firebase Javascript HTML & CSS Spoonacular API
+            </p>
+        </div>
+        <div>
+            <p>
+                A web application that shows Dota2 players detailed match results away from the Dota2 client. Includes 
+                feature that analyzes recent pro matches to find popular item builds and hero picks, along with individual 
+                hero statistics to imrpove player performance.
+            </p>
+        </div>
+    </section> -->
 
     <!-- Make it like a gallery, where on hover text shows up over the image with a brief synopsis -->
     <!-- Make entire website one page, with sections that can be clicked to -->
-    <section class="projects container">
+    <section id="projects" class="container">
+        <!-- featured projects -->
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./smart_cookbook_screenshot.png" class="project-img" data-toggle="modal" data-target="#project1modal">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    A web application that returns recipes based on what ingredients the user inputs. Designed with the purpose
+                    of reducing food waste, stretching meal budgets, and reducing trips to the grocery store to help keep people 
+                    safe during the pandemic.
+                    Google Firebase Javascript HTML & CSS Spoonacular API
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="./dota_averages_screenshot.png" class="project-img" data-toggle="modal" data-target="#project2modal">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    A web application that shows Dota2 players detailed match results away from the Dota2 client. Includes 
+                    feature that analyzes recent pro matches to find popular item builds and hero picks, along with individual 
+                    hero statistics to imrpove player performance.
+                </p>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-4 projects-item">
                 <h3>Competitive Pokemon Trend Analyzer</h3>
@@ -105,8 +174,54 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        
+    <section id="contact" class="container contact">
+        <h1>Contact</h1>
+        <p>
+            You can find me by following the icons below, or contact me directly via email using the button below
+        </p>
+        <button type="button" class="btn btn-outline-primary">Get In Touch</button>
+        <hr>
+        <a href="mailto: ethan.s.wads@gmail.com">
+            <i class="fas fa-envelope contact-icon"></i>
+        </a>
+        <a href="https://github.com/EthanWadsworth" target="_blank">
+            <i class="fab fa-github-square contact-icon"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ethan-wadsworth/" target="_blank">
+            <i class="fab fa-linkedin contact-icon"></i>
+        </a>
     </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project1modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="./smart_cookbook_screenshot.png" class="project-img">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="project2modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="./dota_averages_screenshot.png" class="project-img">
+            </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
