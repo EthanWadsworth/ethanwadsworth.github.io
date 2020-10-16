@@ -54,10 +54,11 @@
                 <a class="nav-link disabled" href="#">Disabled</a>
             </li> -->
             </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
+            <!-- <form class="form-inline my-2 my-lg-0"> -->
+            <a href="./Resume.pdf" target="blank_">
+                <button type="button" class="btn contact-btn highlight btn-outline-warning">Resume</button>
+            </a>
+                <!-- </form> -->
         </div>
     </nav>
 
@@ -71,7 +72,9 @@
             I'm a software developer currently located in La Jolla, CA specializing in writing fullstack web 
             applications with side interests in machine learning and data manipulation.
         </p>
-        <button type="button" class="btn contact-btn highlight btn-outline-primary">Get In Touch</button>
+        <a href="mailto: ethan.s.wads@gmail.com">
+            <button type="button" class="btn contact-btn highlight btn-outline-warning">Get In Touch</button>
+        </a>
     </section>
 
     <!-- Section for About me -->
@@ -79,11 +82,11 @@
         <h1 class="featured-title"><span>A Little About Me</span></h1>
         <div class="row">
             <div class="col-md-8">
-                <p>
+                <p class="text">
                     Hello and welcome! My name is Ethan Wadsworth, a software developer currently located in La Jolla, CA.
                     I'm currently a second-year computer science major at the University of California, San Diego (UCSD).
                 </p>
-                <p>
+                <p class="text">
                     I enjoy developing pieces of software that users can get their hands on. From websites to fullstack web applications to video games, 
                     my individual and team project experiences has allowed me to get my hands dirty in many areas of computer science. 
                     While my main focus has shifted towards fullstack web development, I still enjoy exploring and developing projects for the areas 
@@ -95,23 +98,23 @@
                     Triton Robotics using the opencv library and the C++ language. As a team, we compete in the Robomaster Robotics competition held 
                     annually in China. 
                 </p> -->
-                <p>
+                <p class="text">
                     In my free time, I enjoy playing video games, swimming, and learning Japanese. I'm always up for a casual
                     game of Smash (Corrin/Byleth Main) or Mariokart!
                 </p>
-                <p>
+                <p class="text">
                     Some of the technologies I work with frequently include:
                 </p>
                 <ul>
-                    <li><i class="fas fa-caret-right highlight"></i> Node.js</li>
-                    <li><i class="fas fa-caret-right highlight"></i> React</li>
-                    <li><i class="fas fa-caret-right highlight"></i> Javascript</li>
-                    <li><i class="fas fa-caret-right highlight"></i> HTML & CSS</li>
-                    <li><i class="fas fa-caret-right highlight"></i> Python</li>
-                    <li><i class="fas fa-caret-right highlight"></i> C++</li>
-                    <li><i class="fas fa-caret-right highlight"></i> Opencv</li>
-                    <li><i class="fas fa-caret-right highlight"></i> Java</li>
-                    <li><i class="fas fa-caret-right highlight"></i> Express</li>
+                    <li><i class="fas fa-caret-right highlight"></i><span class="text"> Node.js</span></li>
+                    <li><i class="fas fa-caret-right highlight"></i><span class="text"> React</span></li>
+                    <li><i class="fas fa-caret-right highlight"></i><span class="text"> Javascript</span></li>
+                    <li><i class="fas fa-caret-right highlight"></i><span class="text"> HTML & CSS</span></li>
+                    <li><i class="fas fa-caret-right highlight"></i><span class="text"> Python</span></li>
+                    <li><i class="fas fa-caret-right highlight"></i><span class="text"> C++</span></li>
+                    <li><i class="fas fa-caret-right highlight"></i><span class="text"> Opencv</span></li>
+                    <li><i class="fas fa-caret-right highlight"></i><span class="text"> Java</span></li>
+                    <li><i class="fas fa-caret-right highlight"></i><span class="text"> Express</span></li>
                 </ul>
                 <!-- <table>
                     <tr>
@@ -138,11 +141,14 @@
         </div>
         <!-- Teaching Plug LMAO -->
         <div class="teaching-section">
-            <p>
+            <h3>Teaching</h3>
+            <p class="text">
                 I also have a side interest in teaching and guiding other who want to get into the field of computer science. Feel free to take 
                 a look at my teaching portfolio while you're here!
             </p>
-            <button type="button" class="btn contact-btn highlight btn-outline-primary">More Information</button>
+            <a href="./extensions/html/teaching.html">
+                <button type="button" class="btn contact-btn highlight btn-outline-warning">More Information</button>
+            </a>
         </div>
     </section>
 
@@ -182,18 +188,12 @@
                 <h4 class="featured-attr highlight ml-2">Featured</h4>
                 <div class="ml-2 featured-descript-container">
                     <h3 class="featured-title"><span>Smart Cookbook</span></h3>
-                    <p class="featured-description">
+                    <p class="featured-description text">
                         A web application that returns recipes based on what ingredients the user inputs. Designed with the purpose
                         of reducing food waste, stretching meal budgets, and reducing trips to the grocery store to help keep people 
                         safe during the pandemic.
                         Google Firebase Javascript HTML & CSS Spoonacular API
                     </p>
-                </div>
-                <div class="ml-2">
-                    <p class="featured-project-tech">Google Firebase</p>
-                    <p class="featured-project-tech">Javascript</p>
-                    <p class="featured-project-tech">HTML & CSS</p>
-                    <p class="featured-project-tech">Spoonacular API</p>
                     <a href="https://devpost.com/software/smart-cookbook" target="_blank">
                         <i class="fas fa-external-link-alt featured-link"></i>
                     </a>
@@ -201,8 +201,15 @@
                         <i class="fab fa-github featured-github"></i>
                     </a>
                 </div>
+                <div class="ml-2">
+                    <p class="featured-project-tech text">Google Firebase</p>
+                    <p class="featured-project-tech text">Javascript</p>
+                    <p class="featured-project-tech text">HTML & CSS</p>
+                    <p class="featured-project-tech text">Spoonacular API</p>
+                </div>
             </div>
         </div>
+        <hr class="feature-break">
         <div class="row featured-container">
             <div class="col-md-6 featured">
                 <img src="./dota_averages_screenshot.png" class="project-img" data-toggle="modal" data-target="#project2modal">
@@ -211,71 +218,53 @@
                 <h4 class="featured-attr highlight ml-2">Featured</h4>
                 <div class="ml-2 featured-descript-container">
                     <h3 class="featured-title"><span>Dota 2 Pocket Client</span></h3>
-                    <p class="featured-description">
+                    <p class="featured-description text">
                         A web application that shows Dota2 players detailed match results away from the Dota2 client. Includes 
                         feature that analyzes recent pro matches to find popular item builds and hero picks, along with individual 
                         hero statistics to imrpove player performance.
                     </p>
-                </div>
-                <div class="ml-2">
-                    <p class="featured-project-tech">React</p>
-                    <p class="featured-project-tech">Node.js</p>
-                    <p class="featured-project-tech">HTML & CSS</p>
-                    <p class="featured-project-tech">Steam API</p>
                     <a href="https://github.com/najima44855/home-chef-pad" target="_blank">
                         <i class="fab fa-github featured-github"></i>
                     </a>
                 </div>
+                <div class="ml-2">
+                    <p class="featured-project-tech text">React</p>
+                    <p class="featured-project-tech text">Node.js</p>
+                    <p class="featured-project-tech text">HTML & CSS</p>
+                    <p class="featured-project-tech text">Steam API</p>
+                </div>
             </div>
         </div>
+        <hr class="feature-break">
     </div>
-
-        <!-- Other projects -->
-        <!-- <div class="row">
-            <div class="col-md-4 projects-item">
-                <h3>Competitive Pokemon Trend Analyzer</h3>
-                <p>Web scraping tool used to write competitive Pokemon data to CSV files for later trend analysis using matplotlib</p>
-                <p>Python</p>
-            </div>
-            <div class="col-md-4 projects-item">
-                <h3>Valve Steam Web Api Wrapper</h3>
-                <p>Npm package designed as a wrapper to rechieve data from the popular Valve games Dota2, CSGO, and TF2</p>
-                <p>Node.js Steam Web Api</p>
-            </div>
-            <div class="col-md-4 projects-item">
-                <h3>Haar Cascade Training Data Generation Automator</h3>
-                <p>Automates the generation of training data for custom haar cascades</p>
-                <p>Python Opencv Shell</p>
-            </div>
-        </div> -->
 
         <h2 class="container other-projects-header">Other Projects</h2>
         <div class="projects-container">
             <div class="projects-item">
                 <h3 class="project-title content-positioning">Competitive Pokemon Trend Analyzer</h3>
                 <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning">Web scraping tool used to write competitive Pokemon data to CSV files for later trend analysis using matplotlib</p>
-                <p class="project-technologies content-positioning">Python</p>
+                <p class="project-content content-positioning text">Web scraping tool used to write competitive Pokemon data to CSV files for later trend analysis using matplotlib</p>
+                <p class="project-technologies content-positioning text">Python</p>
             </div>
             <div class="projects-item">
                 <h3 class="project-title content-positioning">Valve Steam Web Api Wrapper</h3>
                 <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning">Npm package designed as a wrapper to rechieve data from the popular Valve games Dota2, CSGO, and TF2</p>
-                <p class="project-technologies content-positioning">Node.js Steam Web Api</p>
+                <p class="project-content content-positioning text">Npm package designed as a wrapper to rechieve data from the popular Valve games Dota2, CSGO, and TF2</p>
+                <p class="project-technologies content-positioning text">Node.js Steam Web Api</p>
             </div>
             <div class="projects-item">
                 <h3 class="project-title content-positioning">Haar Cascade Training Data Generation Automator</h3>
                 <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning">Automates the generation of training data for custom haar cascades</p>
-                <p class="project-technologies content-positioning">Python Opencv Shell</p>
+                <p class="project-content content-positioning text">Automates the generation of training data for custom haar cascades</p>
+                <p class="project-technologies content-positioning text">Python Opencv Shell</p>
             </div>
             <div class="projects-item">
                 <h3 class="project-title content-positioning">Image Processing and Computer Vision Training/Practice Sets</h3>
                 <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning">Notes on step-by-step implementations of many image processing/computer vision algorithms used in opencv.</p>
-                <p class="project-technologies content-positioning">
+                <p class="project-content content-positioning text">Notes on step-by-step implementations of many image processing/computer vision algorithms used in opencv.</p>
+                <p class="project-technologies content-positioning text">
                     Python 
-                    Jupyter Notebooks 
+                    Jupyter 
                     Opencv 
                     Numpy
                 </p>
@@ -283,40 +272,16 @@
             <div class="projects-item">
                 <h3 class="project-title content-positioning">A Cautionary Tale - A Global Warming Text-Based Decision Game</h3>
                 <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning">Multi-path text game designed as an educational tool on global warming to teach how our individual actions can affect the future of the planet</p>
-                <p class="project-technologies content-positioning">Java</p>
+                <p class="project-content content-positioning text">Multi-path text game designed as an educational tool on global warming to teach how our individual actions can affect the future of the planet</p>
+                <p class="project-technologies content-positioning text">Java</p>
             </div>
             <div class="projects-item">
                 <h3 class="project-title content-positioning">1970 San Diego county housing data analysis</h3>
                 <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning">Used regression techniques to find intersting correlations for a data science hackathon</p>
-                <p class="project-technologies content-positioning">Python Pandas Tensorflow Keras</p>
+                <p class="project-content content-positioning text">Used regression techniques to find intersting correlations for a data science hackathon</p>
+                <p class="project-technologies content-positioning text">Python Pandas Tensorflow Keras</p>
             </div>
         </div>
-
-        <!-- <div class="row class">
-            <div class="col-md-4 projects-item">
-                <div class="mx-1 test">
-                        <h3 class="project-title">A Cautionary Tale - A Global Warming Text-Based Decision Game</h3>
-                        <p class="project-content">Multi-path text game designed as an educational tool on global warming to teach how our individual actions can affect the future of the planet</p>
-                        <p class="project-technologies">Java</p>
-                </div>
-            </div>
-            <div class="col-md-4 projects-item">
-                <div class="mx-1 test">
-                        <h3 class="project-title">1970 San Diego county housing data analysis</h3>
-                        <p class="project-content">Used regression techniques to find intersting correlations for a data science hackathon</p>
-                        <p class="project-technologies">Python Pandas Tensorflow Keras</p>
-                </div>
-            </div>
-            <div class="col-md-4 projects-item">
-                <div class="mx-1 test">
-                        <h3 class="project-title">Image Processing and Computer Vision Training/Practice Sets</h3>
-                        <p class="project-content">Notes on step-by-step implementations of many image processing/computer vision algorithms used in opencv.</p>
-                        <p class="project-technologies">Python Jupyter Notebooks Opencv Numpy</p>
-                </div>
-            </div>
-        </div> -->
     </section>
 
     <!-- Contact Section -->
@@ -326,7 +291,9 @@
             You can find me by following the icons below, or contact me directly via email using the button below. I'm always open to new ideas, and 
             am always looking to develop something new with other people! Shoot me an email, and I'll try to get back to you as soon as I can.
         </p>
-        <button type="button" class="btn contact-btn highlight btn-outline-primary" style="margin: 0 auto;">Get In Touch</button>
+        <a href="mailto: ethan.s.wads@gmail.com" style="margin: 0 auto;">
+            <button type="button" class="btn contact-btn highlight btn-outline-warning">Get In Touch</button>
+        </a>
         <div class="contact-icon-group">
             <hr>
             <a href="mailto: ethan.s.wads@gmail.com">

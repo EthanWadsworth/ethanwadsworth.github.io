@@ -2,6 +2,7 @@ body {
     color: #c5c6c7;
     /* background: #00296B; */
     background: rgb(0, 28, 73);
+    font-size: 16px;
 }
 
 html {
@@ -16,11 +17,12 @@ ul {
 }
 
 .intro-name {
-    font-size: 6rem;
+    font-size: 2.5rem;
 }
 
+
 .intro-blurb {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
 }
 
 .intro-greeting {
@@ -49,7 +51,10 @@ ul {
 }
 
 .text {
-    color: #474b4f;
+    /* color: #c5c6c7; */
+    color: #a1a1a1;
+    font-size: 0.75rem;
+    /* font-size: 0.8rem; */
 }
 
 
@@ -103,7 +108,7 @@ ul {
 
 .contact-icon {
     font-size: 50px;
-    color: white;
+    color: #c5c6c7;
     display: inline;
 }
 
@@ -182,9 +187,9 @@ ul {
     padding-top: 10px;
 }
 
-.project-content {
+/* .project-content {
     font-size: 0.8rem;
-}
+} */
 
 .project-github-icon {
     position: absolute;
@@ -270,17 +275,18 @@ ul {
 }
 
 .featured-project-tech {
-    display: inline;
+    display: inline-block;
     padding-right: 1%;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+    margin-bottom: 2px;
 }
 
 .featured-github {
     position: absolute;
-    top: 87%;
-    left: 93%;
+    top: 10%;
+    left: 89%;
     font-size: 1.4rem;
-    color: white;
+    color: #c5c6c7;
 }
 
 .featured-github:hover {
@@ -291,13 +297,21 @@ ul {
     /* float: right; */
     position: absolute;
     font-size: 1.2rem;
-    top: 87%;
-    left: 85%;
-    color: white;
+    top: 10%;
+    left: 80%;
+    color: #c5c6c7;
 }
 
 .featured-link:hover {
     color: #FFD500;
+}
+
+.feature-break {
+    border-top: #FFD500 solid 2px;
+    width: 30%;
+    text-align: right;
+    margin-left: 0;
+    margin-top: 2px;
 }
 
 table {
@@ -378,12 +392,48 @@ section {
 
 .teaching-section {
     /* margin-top: 30px; */
-    text-align: center;
+    /* text-align: center; */
     max-width: 500px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
 }
 
 .other-projects-header {
     text-align: center;
     margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+    /* html {
+        font-size: 30px;
+    } */
+    .intro-name {
+        font-size: 4.5rem;
+    }
+    
+    
+    .intro-blurb {
+        font-size: 3.5rem;
+    }
+    
+    .intro-greeting {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .project-content {
+        font-size: 0.75rem;
+    }
+
+    .project-technologies {
+        font-size: 0.75rem;
+    }
+
+    .featured-project-tech {
+        display: inline;
+        padding-right: 1%;
+    }
 }
