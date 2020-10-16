@@ -1,10 +1,60 @@
 body {
     color: #c5c6c7;
-    background: #0b0c10;
+    /* background: #00296B; */
+    background: rgb(0, 28, 73);
 }
 
 html {
 	scroll-behavior: smooth;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 150px));
+    list-style: none;
+    padding-left: 0;
+}
+
+.intro-name {
+    font-size: 6rem;
+}
+
+.intro-blurb {
+    font-size: 3.5rem;
+}
+
+.intro-greeting {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.intro-text {
+    width: 100%;
+}
+
+/* Page Themes */
+.highlight {
+    color: #FFD500;
+}
+
+.highlight-soft {
+    color: #FDC500;
+} 
+
+.light-color {
+    color: #00509D;
+}
+.text-header {
+    color: white;
+}
+
+.text {
+    color: #474b4f;
+}
+
+
+.text-alt {
+    color: #6b6e70;
 }
 
 .set-to-viewport {
@@ -18,17 +68,22 @@ html {
 }
 
 .projects-item {
-    border: 2px solid black;
     border-radius: 10px;
     width: 250px;
     height: 200px;
-    background: #1F2833;;
+    /* background: #003F88; */
+    background: rgb(0, 39, 100);
     /* margin: auto; */
     /* padding-left: 20px;
     padding-right: 20px; */
     margin-bottom: 10px;
     margin: auto;
     position: relative;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,1);
+    display: block;
+    grid-template-columns: none;
     /* margin: auto; */
     /* margin-left: 8.33%;
     margin-right: 8.33%; */
@@ -48,17 +103,26 @@ html {
 
 .contact-icon {
     font-size: 50px;
-    color: #66fcf1;
+    color: white;
     display: inline;
 }
 
 .contact-icon:hover {
-    color: #45A29E;
+    color: #FFD500;
+}
+
+.contact-icon-group {
+    margin: 0 auto;
+}
+
+.contact-header {
+    margin: 0 auto;
 }
 
 .project-img {
     width: 100%;
     height: auto;
+    background-color: #FDC500;
 }
 
 .featured {
@@ -89,7 +153,6 @@ html {
     .projects-container { grid-template-columns: repeat(3, 1fr); }
 
     .projects-item {
-        border: 2px solid black;
         border-radius: 10px;
         width: 100%;
         height: 100%;
@@ -107,16 +170,20 @@ html {
         /* display: inline-block; */
         /* vertical-align: top; */
     }
+
+    .intro-text {
+        width: 50%;
+    }
   }
 
 .project-title {
-    font-size: 14px;
+    font-size: 1.2rem;
     width: 90%;
     padding-top: 10px;
 }
 
 .project-content {
-    font-size: 10px;
+    font-size: 0.8rem;
 }
 
 .project-github-icon {
@@ -125,11 +192,20 @@ html {
     right: 2%;
 }
 
+.project-github-icon:hover {
+    color: #FFD500;
+}
+
 .project-technologies {
-    font-size: 8px;
+    font-size: 0.8rem;
     /* vertical-align: bottom; */
     position: absolute;
     top: 90%;
+}
+
+.project-technologies i {
+    font-size: 8px;
+    color: #45A29E;
 }
 
 /* @media (min-width: 576px) {
@@ -149,11 +225,12 @@ html {
 }
 
 .modal-content {
-    background-color: #1F2833;
+    background-color: rgb(0, 28, 73);
 }
 
 .close {
-    color: #c5c6c7;
+    color: #FFD500;
+    text-shadow: 0 1px 0 #00509D;
 }
 
 .modal-header {
@@ -165,30 +242,62 @@ html {
 }
 
 .featured-descript-container {
-    background: #1F2833;
-    -webkit-box-shadow: 7px 7px 2px 0px rgba(69,162,158,1);
+    background: rgb(0, 39, 100);
+    /* -webkit-box-shadow: 7px 7px 2px 0px rgba(69,162,158,1);
     -moz-box-shadow: 7px 7px 2px 0px rgba(69,162,158,1);
-    box-shadow: 7px 7px 2px 0px rgba(69,162,158,1);
+    box-shadow: 7px 7px 2px 0px rgba(69,162,158,1); */
     padding: 10px;
+    position: relative;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 7px 1px rgba(0,0,0,1);
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
-.featured-title {
-    width: 100%; 
-    /* text-align: center;  */
-    border-bottom: 1px solid #c5c6c7; 
-    line-height: 0.1em;
-    margin: 10px 0 20px; 
+.featured-container {
+    margin-bottom: 20px;
 }
+
 .featured-title span {
-    background:#0b0c10; 
     /* padding:0 10px;  */
     padding-right: 10px;
     padding-left: 0;
 }
 
 .featured-attr {
-    margin-bottom: 20px;
-    color: #45A29E;
+    margin-bottom: 5px;
+}
+
+.featured-project-tech {
+    display: inline;
+    padding-right: 1%;
+    font-size: 0.8rem;
+}
+
+.featured-github {
+    position: absolute;
+    top: 87%;
+    left: 93%;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.featured-github:hover {
+    color: #FFD500;
+}
+
+.featured-link {
+    /* float: right; */
+    position: absolute;
+    font-size: 1.2rem;
+    top: 87%;
+    left: 85%;
+    color: white;
+}
+
+.featured-link:hover {
+    color: #FFD500;
 }
 
 table {
@@ -201,7 +310,7 @@ table tr {
 
 /* change the background color */
 .navbar-custom { 
-    background-color: #0b0c10;
+    background-color: #474b4f;
     position: fixed;
     top: 0;
     transition: top 0.3s;
@@ -209,32 +318,47 @@ table tr {
     -moz-box-shadow: 0px 3px 3px 0px rgba(31,40,51,1);
     box-shadow: 0px 3px 3px 0px rgba(31,40,51,1); */
     width: 100%;
-    background: #0b0c10;
+    background: #00296B;
     z-index: 1;
+    box-shadow: 0 4px 2px -2px black;
 } 
 
 .navbar-custom .navbar-brand, 
 .navbar-custom .nav-link { 
-    color: #66fcf1; 
+    color: #FFD500; 
 } 
 
+.navbar-custom .navbar-brand:hover, 
+.navbar-custom .nav-link:hover { 
+    color: #FDC500;
+}
+
+.navbar-brand {
+    border: 2px solid #FFD500;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+.navbar-brand:hover {
+    border-color: #FDC500;
+}
+
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(102, 252, 241, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 213, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .custom-toggler.navbar-toggler {
-    border-color: #66fcf1;
+    border-color: #FFD500;
 } 
 
 .contact-btn {
-    color: #66fcf1;
-    border-color: #66fcf1;
+    border-color: #FFD500;
 }
 
 .contact-btn:hover {
-    color: #66fcf1;
-    border-color: #66fcf1; 
-    background: #1F2833;
+    color: #FFD500;
+    border-color: #FFD500; 
+    background: rgba(255, 213, 0, 0.1);
 }
 
 .img-on-hover {
@@ -257,4 +381,9 @@ section {
     text-align: center;
     max-width: 500px;
     margin: 20px auto;
+}
+
+.other-projects-header {
+    text-align: center;
+    margin-top: 30px;
 }

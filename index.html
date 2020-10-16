@@ -20,7 +20,7 @@
         <!-- navbar-light bg-light navbar-custom -->
     <!-- <nav class="navbar navbar-light bg-light navbar-expand-lg"> -->
     <nav class="navbar navbar-custom navbar-expand-lg">
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="#introduction">E</a>
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -64,14 +64,14 @@
     <!-- What the user sees when they first open the homepage -->
     <section id='introduction' class="container set-to-viewport">
 
-        <p>Hi, my name is</p>
-        <h1>Ethan Wadsworth.</h1>
-        <h2>I build software for more than just the web.</h2>
-        <p style="width: 50%;">
+        <p class="highlight intro-greeting">Hi, my name is</p>
+        <h1 class="intro-name">Ethan Wadsworth.</h1>
+        <h2 class="text-alt intro-blurb">I build software for more than just the web.</h2>
+        <p class="intro-text">
             I'm a software developer currently located in La Jolla, CA specializing in writing fullstack web 
             applications with side interests in machine learning and data manipulation.
         </p>
-        <button type="button" class="btn contact-btn btn-outline-primary">Get In Touch</button>
+        <button type="button" class="btn contact-btn highlight btn-outline-primary">Get In Touch</button>
     </section>
 
     <!-- Section for About me -->
@@ -81,19 +81,20 @@
             <div class="col-md-8">
                 <p>
                     Hello and welcome! My name is Ethan Wadsworth, a software developer currently located in La Jolla, CA.
+                    I'm currently a second-year computer science major at the University of California, San Diego (UCSD).
                 </p>
                 <p>
                     I enjoy developing pieces of software that users can get their hands on. From websites to fullstack web applications to video games, 
                     my individual and team project experiences has allowed me to get my hands dirty in many areas of computer science. 
                     While my main focus has shifted towards fullstack web development, I still enjoy exploring and developing projects for the areas 
-                    of computer vision, machine learning, and data visualization.
+                    of computer vision, machine learning, and data visualization. 
                 </p>
-                <p>
+                <!-- <p>
                     I'm currently a second-year computer science major at the University of California, San Diego (UCSD). Outside 
                     of the classroom, I assist in the design auto-aiming and aim assist (aimbot) as a member of the computer vision subteam on 
                     Triton Robotics using the opencv library and the C++ language. As a team, we compete in the Robomaster Robotics competition held 
                     annually in China. 
-                </p>
+                </p> -->
                 <p>
                     In my free time, I enjoy playing video games, swimming, and learning Japanese. I'm always up for a casual
                     game of Smash (Corrin/Byleth Main) or Mariokart!
@@ -101,7 +102,18 @@
                 <p>
                     Some of the technologies I work with frequently include:
                 </p>
-                <table>
+                <ul>
+                    <li><i class="fas fa-caret-right highlight"></i> Node.js</li>
+                    <li><i class="fas fa-caret-right highlight"></i> React</li>
+                    <li><i class="fas fa-caret-right highlight"></i> Javascript</li>
+                    <li><i class="fas fa-caret-right highlight"></i> HTML & CSS</li>
+                    <li><i class="fas fa-caret-right highlight"></i> Python</li>
+                    <li><i class="fas fa-caret-right highlight"></i> C++</li>
+                    <li><i class="fas fa-caret-right highlight"></i> Opencv</li>
+                    <li><i class="fas fa-caret-right highlight"></i> Java</li>
+                    <li><i class="fas fa-caret-right highlight"></i> Express</li>
+                </ul>
+                <!-- <table>
                     <tr>
                         <td><span class="about-bullet">></span> Node.js</td>
                         <td><span class="about-bullet">></span> React</td>
@@ -117,11 +129,11 @@
                         <td><span class="about-bullet">></span> Java</td>
                         <td><span class="about-bullet">></span> Express</td>
                     </tr>
-                </table>
+                </table> -->
             </div>
             <div class="col-md-4">
                 <!-- Placeholder  -->
-                <div style="width:100%; height: 100%; background-color:black;"></div>
+                <div style="width:100%; height: 400px; background-color:black; margin-bottom: 40px;"></div>
             </div>
         </div>
         <!-- Teaching Plug LMAO -->
@@ -130,7 +142,7 @@
                 I also have a side interest in teaching and guiding other who want to get into the field of computer science. Feel free to take 
                 a look at my teaching portfolio while you're here!
             </p>
-            <button type="button" class="btn contact-btn btn-outline-primary">More Information</button>
+            <button type="button" class="btn contact-btn highlight btn-outline-primary">More Information</button>
         </div>
     </section>
 
@@ -161,14 +173,14 @@
         <!-- featured projects -->
         <div class="container">
         <h1>Projects</h1>
-        <div class="row">
+        <div class="row featured-container">
             <div class="col-md-6 featured">
                 <img src="./smart_cookbook_screenshot.png" class="project-img" data-toggle="modal" data-target="#project1modal">
                 <div class="img-on-hover"><p>Click here to expand</p></div>
             </div>
             <div class="col-md-6">
+                <h4 class="featured-attr highlight ml-2">Featured</h4>
                 <div class="ml-2 featured-descript-container">
-                    <h4 class="featured-attr">Featured</h4>
                     <h3 class="featured-title"><span>Smart Cookbook</span></h3>
                     <p class="featured-description">
                         A web application that returns recipes based on what ingredients the user inputs. Designed with the purpose
@@ -177,21 +189,42 @@
                         Google Firebase Javascript HTML & CSS Spoonacular API
                     </p>
                 </div>
+                <div class="ml-2">
+                    <p class="featured-project-tech">Google Firebase</p>
+                    <p class="featured-project-tech">Javascript</p>
+                    <p class="featured-project-tech">HTML & CSS</p>
+                    <p class="featured-project-tech">Spoonacular API</p>
+                    <a href="https://devpost.com/software/smart-cookbook" target="_blank">
+                        <i class="fas fa-external-link-alt featured-link"></i>
+                    </a>
+                    <a href="https://github.com/najima44855/home-chef-pad" target="_blank">
+                        <i class="fab fa-github featured-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row featured-container">
             <div class="col-md-6 featured">
                 <img src="./dota_averages_screenshot.png" class="project-img" data-toggle="modal" data-target="#project2modal">
             </div>
             <div class="col-md-6">
+                <h4 class="featured-attr highlight ml-2">Featured</h4>
                 <div class="ml-2 featured-descript-container">
-                    <h4 class="featured-attr">Featured</h4>
                     <h3 class="featured-title"><span>Dota 2 Pocket Client</span></h3>
                     <p class="featured-description">
                         A web application that shows Dota2 players detailed match results away from the Dota2 client. Includes 
                         feature that analyzes recent pro matches to find popular item builds and hero picks, along with individual 
                         hero statistics to imrpove player performance.
                     </p>
+                </div>
+                <div class="ml-2">
+                    <p class="featured-project-tech">React</p>
+                    <p class="featured-project-tech">Node.js</p>
+                    <p class="featured-project-tech">HTML & CSS</p>
+                    <p class="featured-project-tech">Steam API</p>
+                    <a href="https://github.com/najima44855/home-chef-pad" target="_blank">
+                        <i class="fab fa-github featured-github"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -216,7 +249,7 @@
             </div>
         </div> -->
 
-        <h2 class="container">Other Projects</h2>
+        <h2 class="container other-projects-header">Other Projects</h2>
         <div class="projects-container">
             <div class="projects-item">
                 <h3 class="project-title content-positioning">Competitive Pokemon Trend Analyzer</h3>
@@ -241,9 +274,9 @@
                 <i class="fab fa-github project-github-icon"></i>
                 <p class="project-content content-positioning">Notes on step-by-step implementations of many image processing/computer vision algorithms used in opencv.</p>
                 <p class="project-technologies content-positioning">
-                    Python <i class="fas fa-circle"></i> 
-                    Jupyter Notebooks <i class="fas fa-circle"></i> 
-                    Opencv <i class="fas fa-circle"></i> 
+                    Python 
+                    Jupyter Notebooks 
+                    Opencv 
                     Numpy
                 </p>
             </div>
@@ -288,13 +321,13 @@
 
     <!-- Contact Section -->
     <section id="contact" class="container contact set-to-viewport">
-        <h1>Contact</h1>
+        <h1 class="contact-header">Contact</h1>
         <p>
             You can find me by following the icons below, or contact me directly via email using the button below. I'm always open to new ideas, and 
             am always looking to develop something new with other people! Shoot me an email, and I'll try to get back to you as soon as I can.
         </p>
-        <button type="button" class="btn contact-btn btn-outline-primary" style="margin: 0 auto;">Get In Touch</button>
-        <div style="margin: 0 auto;">
+        <button type="button" class="btn contact-btn highlight btn-outline-primary" style="margin: 0 auto;">Get In Touch</button>
+        <div class="contact-icon-group">
             <hr>
             <a href="mailto: ethan.s.wads@gmail.com">
                 <i class="fas fa-envelope contact-icon"></i>
