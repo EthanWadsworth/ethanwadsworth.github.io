@@ -193,8 +193,10 @@ ul {
 
 .project-github-icon {
     position: absolute;
-    top: 1%;
-    right: 2%;
+    top: 3%;
+    right: 3%;
+    color: #c5c6c7;
+    font-size: 1.2rem;
 }
 
 .project-github-icon:hover {
@@ -399,7 +401,7 @@ section {
 
 .other-projects-header {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 @media (min-width: 576px) {
@@ -436,4 +438,8 @@ section {
         display: inline;
         padding-right: 1%;
     }
+}
+
+.inline-link:hover {
+    color: #FDC500;
 }

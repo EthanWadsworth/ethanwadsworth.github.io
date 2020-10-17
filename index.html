@@ -14,7 +14,7 @@
 
     <script src="https://kit.fontawesome.com/ed43ac3da1.js" crossorigin="anonymous"></script>
 
-    <title>Home</title>
+    <title>Ethan Wadsworth</title>
 </head>
 <body>
         <!-- navbar-light bg-light navbar-custom -->
@@ -70,7 +70,7 @@
         <h2 class="text-alt intro-blurb">I build software for more than just the web.</h2>
         <p class="intro-text">
             I'm a software developer currently located in La Jolla, CA specializing in writing fullstack web 
-            applications with side interests in machine learning and data manipulation.
+            applications with side interests in machine learning, computer vision, and data visualization.
         </p>
         <a href="mailto: ethan.s.wads@gmail.com">
             <button type="button" class="btn contact-btn highlight btn-outline-warning">Get In Touch</button>
@@ -79,7 +79,7 @@
 
     <!-- Section for About me -->
     <section id='about-me' class="container set-to-viewport">
-        <h1 class="featured-title"><span>A Little About Me</span></h1>
+        <h1 class="featured-title"><span>About Me</span></h1>
         <div class="row">
             <div class="col-md-8">
                 <p class="text">
@@ -136,7 +136,8 @@
             </div>
             <div class="col-md-4">
                 <!-- Placeholder  -->
-                <div style="width:100%; height: 400px; background-color:black; margin-bottom: 40px;"></div>
+                <!-- <div style="width:100%; height: 400px; background-color:black; margin-bottom: 40px;"></div> -->
+                <img style="width: 100%; height: auto;" src="./photo.jpg">
             </div>
         </div>
         <!-- Teaching Plug LMAO -->
@@ -189,10 +190,9 @@
                 <div class="ml-2 featured-descript-container">
                     <h3 class="featured-title"><span>Smart Cookbook</span></h3>
                     <p class="featured-description text">
-                        A web application that returns recipes based on what ingredients the user inputs. Designed with the purpose
+                        A web application built at <a class="inline-link highlight" href="https://ivyhacks.devpost.com/">Ivyhacks 2020</a> that returns recipes based on what ingredients the user inputs. Designed with the purpose
                         of reducing food waste, stretching meal budgets, and reducing trips to the grocery store to help keep people 
                         safe during the pandemic.
-                        Google Firebase Javascript HTML & CSS Spoonacular API
                     </p>
                     <a href="https://devpost.com/software/smart-cookbook" target="_blank">
                         <i class="fas fa-external-link-alt featured-link"></i>
@@ -223,7 +223,7 @@
                         feature that analyzes recent pro matches to find popular item builds and hero picks, along with individual 
                         hero statistics to imrpove player performance.
                     </p>
-                    <a href="https://github.com/najima44855/home-chef-pad" target="_blank">
+                    <a href="https://github.com/EthanWadsworth/dota-only-the-averages" target="_blank">
                         <i class="fab fa-github featured-github"></i>
                     </a>
                 </div>
@@ -242,26 +242,42 @@
         <div class="projects-container">
             <div class="projects-item">
                 <h3 class="project-title content-positioning">Competitive Pokemon Trend Analyzer</h3>
-                <i class="fab fa-github project-github-icon"></i>
+                <a href="https://github.com/EthanWadsworth/Pokemon_info">
+                    <i class="fab fa-github project-github-icon"></i>
+                </a>
                 <p class="project-content content-positioning text">Web scraping tool used to write competitive Pokemon data to CSV files for later trend analysis using matplotlib</p>
                 <p class="project-technologies content-positioning text">Python</p>
             </div>
             <div class="projects-item">
                 <h3 class="project-title content-positioning">Valve Steam Web Api Wrapper</h3>
-                <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning text">Npm package designed as a wrapper to rechieve data from the popular Valve games Dota2, CSGO, and TF2</p>
+                <a href="https://github.com/EthanWadsworth/valve-steam-web-api">
+                    <i class="fab fa-github project-github-icon"></i>
+                </a>
+                <p class="project-content content-positioning text">
+                    Npm package designed as a wrapper for the Steam Web API to rechieve data from the popular Valve games Dota2, CSGO, and TF2.
+                </p>
                 <p class="project-technologies content-positioning text">Node.js Steam Web Api</p>
             </div>
             <div class="projects-item">
                 <h3 class="project-title content-positioning">Haar Cascade Training Data Generation Automator</h3>
-                <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning text">Automates the generation of training data for custom haar cascades</p>
+                <a href="https://github.com/EthanWadsworth/haar-cascade-training-data-generator">
+                    <i class="fab fa-github project-github-icon"></i>
+                </a>
+                <p class="project-content content-positioning text">
+                    Automates the generation of training data for custom haar cascades for a single positive sample. Includes support for 
+                    capturing and storing video frames for manual positive sample collection.
+                </p>
                 <p class="project-technologies content-positioning text">Python Opencv Shell</p>
             </div>
             <div class="projects-item">
                 <h3 class="project-title content-positioning">Image Processing and Computer Vision Training/Practice Sets</h3>
-                <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning text">Notes on step-by-step implementations of many image processing/computer vision algorithms used in opencv.</p>
+                <a href="https://github.com/EthanWadsworth/TR_CV_Notes">
+                    <i class="fab fa-github project-github-icon"></i>
+                </a>
+                <p class="project-content content-positioning text">
+                    Notes on step-by-step implementations of many image processing/computer vision algorithms used in the
+                    popular image processing library opencv.
+                </p>
                 <p class="project-technologies content-positioning text">
                     Python 
                     Jupyter 
@@ -278,7 +294,9 @@
             <div class="projects-item">
                 <h3 class="project-title content-positioning">1970 San Diego county housing data analysis</h3>
                 <i class="fab fa-github project-github-icon"></i>
-                <p class="project-content content-positioning text">Used regression techniques to find intersting correlations for a data science hackathon</p>
+                <p class="project-content content-positioning text">
+                    Used regression techniques to find intersting correlations for a data science hackathon
+                </p>
                 <p class="project-technologies content-positioning text">Python Pandas Tensorflow Keras</p>
             </div>
         </div>
