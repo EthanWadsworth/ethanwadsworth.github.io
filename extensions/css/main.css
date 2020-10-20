@@ -127,7 +127,10 @@ ul {
 .project-img {
     width: 100%;
     height: auto;
-    background-color: #FDC500;
+}
+
+.project-img:hover {
+    cursor: pointer;
 }
 
 .featured {
